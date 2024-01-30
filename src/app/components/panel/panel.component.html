@@ -1,0 +1,13 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let panel of panelData">
+      <mat-expansion-panel-header hideToggle (click)="loadData(panel.parameter)">
+        {{ panel.title }}
+        <!-- <button mat-icon-button (click)="loadData(panel.parameter)">
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button> -->
+      </mat-expansion-panel-header>
+      <mat-panel-description>
+        {{ panel.additionalData }}
+      </mat-panel-description>
+    </mat-expansion-panel>
+  </mat-accordion>
